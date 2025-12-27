@@ -44,7 +44,7 @@ export default function Menu() {
           </Link>
         ))}
       </div>
-      <Link to="/cart">
+      <Link to="/Cart">
   <button style={{ marginTop: "36px" ,
           padding: "20px",
           width: "50%",

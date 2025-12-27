@@ -8,7 +8,7 @@ export default function Home() {
       <p>นี่คือหน้าแรกของเว็บ</p>
 
   <CardButton
-  to="/menu"
+  to="/Menu"
   title="ไปหน้าเมนู"
   subtitle="เลือกเมนูอาหาร"
   />

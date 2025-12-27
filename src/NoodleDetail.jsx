@@ -151,7 +151,7 @@ export default function NoodleDetail() {
         เพิ่มลงตะกร้า
       </button>
       
-      <Link to="/cart">
+      <Link to="/Cart">
       <button style={{
           marginTop: "20px",
           padding: "12px",
@@ -168,7 +168,7 @@ export default function NoodleDetail() {
       </Link>
 
 
-      <Link to="/noodles">
+      <Link to="/Noodles">
         <button        
         style={{
           marginTop: "20px",

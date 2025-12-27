@@ -65,7 +65,7 @@ export default function Noodles() {
         ))}
       </div>
   <CardButton
-  to="/menu"
+  to="/Menu"
   title="⬅ กลับไปหน้าเมนู"
   subtitle="เลือกหมวดอาหารอื่น"
   />

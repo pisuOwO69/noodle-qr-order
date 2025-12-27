@@ -1,12 +1,12 @@
 import { useParams, Link } from "react-router-dom";
-import noodleMenu from "./data/noodles";
+import NoodleMenu from "./data/noodles";
 import { useState } from "react";
 import { useCart } from "./CartContext";
 
 export default function NoodleDetail() {
   const { id } = useParams();
   const { addToCart } = useCart();
-  const noodle = noodleMenu.find((n) => n.id === id);
+  const noodle = NoodleMenu.find((n) => n.id === id);
 
   if (!noodle) {
     return <h2>ไม่พบเมนูนี้</h2>;

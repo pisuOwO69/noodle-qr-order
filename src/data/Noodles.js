@@ -1,4 +1,4 @@
-const noodleMenu = [
+const NoodleMenu = [
   {
     id: "chicken",
     name: "ก๋วยเตี๋ยวไก่",
@@ -25,7 +25,7 @@ const noodleMenu = [
   }
 ];
 
-export const noodleOptions = {
+export const NoodleOptions = {
   spicy: ["ไม่เผ็ด", "เผ็ดน้อย", "เผ็ดกลาง", "เผ็ดมาก"],
   soup: ["น้ำใส", "ต้มยำ", "น้ำตก", "เย็นตาโฟ", "เย็นตาโฟต้มยำ"],
   noodleType: ["เล็ก", "ใหญ่", "มาม่า", "วุ้นเส้น"],
@@ -40,4 +40,4 @@ export const noodleOptions = {
   ]
 };
 
-export default noodleMenu;
+export default NoodleMenu;

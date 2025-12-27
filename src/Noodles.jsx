@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import CardButton from "./CardButton";
 
 
-export default function Noodles() {
+export default function noodles() {
   return (
     <div style={{ padding: "20px" }}>
       <h1 style={{ textAlign: "center" }}>เมนูก๋วยเตี๋ยว</h1>

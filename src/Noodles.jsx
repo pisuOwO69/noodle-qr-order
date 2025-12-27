@@ -1,4 +1,4 @@
-import noodleMenu from "./data/Noodles";
+import NoodleMenu from "./data/Noodles";
 import { Link } from "react-router-dom";
 import CardButton from "./CardButton";
 
@@ -15,7 +15,7 @@ export default function Noodles() {
           marginTop: "30px"
         }}
       >
-        {noodleMenu.map((item) => (
+        {NoodleMenu.map((item) => (
           <Link
             to={`/noodles/${item.id}`}
             key={item.id}

@@ -99,10 +99,10 @@ export default function NoodleDetail() {
 
       <h2>ราคารวม: {totalPrice} บาท</h2>
 
-      <button onClick={add} style={{ width: "100%", marginTop: 10 }}>
-        เพิ่มลงตะกร้า
+      <button onClick={add} style={primaryButtonStyle}>
+      เพิ่มลงตะกร้า
       </button>
-
+      
       <Link to="/cart"><button>ไปที่ตะกร้า</button></Link>
       <Link to="/noodles"><button>กลับ</button></Link>
     </div>

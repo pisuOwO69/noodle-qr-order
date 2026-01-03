@@ -5,7 +5,13 @@ export default function Kitchen() {
   const { orders, removeOrder } = useCart();
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div
+    style={{
+    padding: "20px",
+    minHeight: "100vh",
+    background: "#f2f2f2"
+  }}
+>
       <h1>หน้าครัว </h1>
 
       <CardButton
@@ -20,15 +26,16 @@ export default function Kitchen() {
         orders.map(order => (
           <div
             key={order.id}
-            style={{
-              border: "1px solid #ccc",
-              padding: "15px",
-              marginTop: "15px",
-              borderRadius: "8px"
+              style={{
+              background: "white",
+              padding: "20px",
+              borderRadius: "12px",
+              marginBottom: "20px",
+              fontSize: "20px"
             }}
           >
-            <h2>🪑 โต๊ะ {order.table}</h2>
-            <p>เวลา: {order.time}</p>
+            <h2 style={{ fontSize: "26px" }}>🪑 โต๊ะ {order.table}</h2>
+            <p style={{ fontSize: "18px" }}>เวลา: {order.time}</p>
 
             {order.items.map((item, i) => (
               <div key={i} style={{ marginLeft: "10px" }}>
@@ -50,14 +57,14 @@ export default function Kitchen() {
             <button
               onClick={() => removeOrder(order.id)}
               style={{
-                marginTop: "10px",
-                padding: "10px",
+                marginTop: "15px",
+                padding: "15px",
                 width: "100%",
                 background: "#4caf50",
                 color: "white",
                 border: "none",
-                borderRadius: "6px",
-                fontSize: "16px"
+                borderRadius: "10px",
+                fontSize: "20px"
               }}
             >
               ทำเสร็จแล้ว

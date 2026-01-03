@@ -74,7 +74,10 @@ export default function Cart() {
     ส่งออเดอร์ให้ครัว
     </button>
 
-    
+    <Link to="/checkout">
+    <button>ไปชำระเงิน</button>
+    </Link>
+
     <Link to="/noodles">
         <button        
         style={{

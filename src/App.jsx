@@ -8,6 +8,7 @@ import Tea from "./Tea";
 import NoodleDetail from "./NoodleDetail";
 import Cart from "./Cart";
 import Kitchen from "./Kitchen";
+import Checkout from "./Checkout";
 
 export default function App() {
   const [params] = useSearchParams();
@@ -16,6 +17,7 @@ export default function App() {
     const table = params.get("table");
     if (table) {
       localStorage.setItem("tableNumber", table);
+      localStorage.removeItem("cart");
     }
   }, [params]);
 
@@ -28,6 +30,8 @@ export default function App() {
       <Route path="/tea" element={<Tea />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/kitchen" element={<Kitchen />} />
+      <Route path="/checkout" element={<Checkout />} />
+
     </Routes>
   );
 }
